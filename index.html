@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Display area -->
+        <div class="display">
+            <div class="inputArea">
+                <input type="text" placeholder="Enter your location" value="quetta">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="currentweather">
+                <h5 class="currentCity">---</h5>
+                <p class="currentTemp"><span id="curTemp">--</span>°</p>
+                <p class="currentcondition">---</p>
+            </div>
+        </div>
+
+        <!-- Hourly weather -->
+        <div class="hourlyweather">
+            <div class="portion">
+                <p class="hourlytime">Now</p>
+                <p class="cloudIconNow"></p>
+                <!-- <img src="https://cdn-icons-png.flaticon.com/512/1779/1779940.png" alt="" class="hourlyicon"> -->
+                <p class="hourlytemp"><span id="curTempNow">--</span>°</p>
+            </div>
+
+            <div class="portion">
+                <p class="hourlytime" id="3Hours">--</p>
+                <p class="cloudIcon3"></p>
+                <p class="hourlytemp"><span id="3HoursTemp">--</span>°</p>
+            </div>
+
+            <div class="portion">
+                <p class="hourlytime" id="6Hours">--</p>
+                <p class="cloudIcon6"></p>
+                <!-- <img src="https://cdn-icons-png.flaticon.com/512/1779/1779940.png" alt="" class="hourlyicon"> -->
+                <p class="hourlytemp"><span id="6HoursTemp">--</span>°</p>
+            </div>
+
+            <div class="portion">
+                <p class="hourlytime" id="9Hours">--</p>
+                <p class="cloudIcon9"></p>
+                <!-- <img src="https://cdn-icons-png.flaticon.com/512/1779/1779940.png" alt="" class="hourlyicon"> -->
+                <p class="hourlytemp"><span id="9HoursTemp">--</span>°</p>
+            </div>
+            <div class="portion">
+                <p class="hourlytime" id="12Hours">--</p>
+                <p class="cloudIcon12"></p>
+                <!-- <img src="https://cdn-icons-png.flaticon.com/512/1779/1779940.png" alt="" class="hourlyicon"> -->
+                <p class="hourlytemp"><span id="12HoursTemp">--</span>°</p>
+            </div>
+        </div>
+
+
+
+        <div class="dailyweather">
+            <div class="secondPortion">
+                <p class="day">Today</p>
+                <img id="todayimg" src="" alt="" class="dailyicon">
+                <p><span id="todaymin">--</span>°------------ <span id="todaymax">--</span>°</p>
+            </div>
+
+            <div class="secondPortion">
+                <p class="day">Tomorow</p>
+                <img id="tomorrowimg" src="" alt="" class="dailyicon">
+                <p><span id="tomorrowmin">--</span>°------------ <span id="tomorrowmax">--</span>°</p>
+            </div>
+
+            <div class="secondPortion">
+                <p class="day">After 02 Days</p>
+                <img id="2daysimg" src="" alt="" class="dailyicon">
+                <p><span id="2daysmin">--</span>°------------ <span id="2daysmax">--</span>°</p>
+            </div>
+
+            <div class="secondPortion">
+                <p class="day">After 03 Days</p>
+                <img id="3daysimg" src="" alt="" class="dailyicon">
+                <p><span id="3daysmin">--</span>°------------ <span id="3daysmax">--</span>°</p>
+            </div>
+
+            <div class="secondPortion">
+                <p class="day">After 04 Days</p>
+                <img id="4daysimg"  src="" alt="" class="dailyicon">
+                <p><span id="4daysmin">--</span>°------------ <span id="4daysmax">--</span>°</p>
+            </div>
+
+            <div class="secondPortion">
+                <p class="day">After 05 Days</p>
+                <img  id="5daysimg"  src="" alt="" class="dailyicon">
+                <p><span id="5daysmin">--</span>°------------ <span id="5daysmax">--</span>°</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
