@@ -1,1 +1,1 @@
-https://iphone-weather-app-saylani.netlify.app
+https://iphone-weather-app.netlify.app
